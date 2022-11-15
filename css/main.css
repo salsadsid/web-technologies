@@ -373,3 +373,21 @@ body {
 .photo:hover::before {
     opacity: 1;
 }
+
+
+.footer-text {
+    font-size: 18px;
+    color: #C06C84;
+    margin: 70px;
+    text-align: center;
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-text a:hover {
+
+    color: #C06C84;
+}
