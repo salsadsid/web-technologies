@@ -7,15 +7,53 @@ body {
     /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Slabo 27px', serif;
     /* font-family: 'Ubuntu', sans-serif; */
+    background-color: #212121;
+    color: aliceblue;
 }
 
-.comtainer {
+.header {
+    margin: 0 auto;
+    margin: 15px;
+}
+
+.link {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-item {
+    margin-right: 50px;
+    font-size: 24px;
+}
+
+.link-item a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.link-item {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.link-item:hover {
+    background-color: #C06C84;
+    color: #212121;
+}
+
+.link-item:hover a {
+    color: #212121
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .banner {
     display: flex;
+    height: 100vh;
 }
 
 .banner-left {
@@ -29,4 +67,187 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.banner-right>img {
+    width: 80%;
+}
+
+.banner-title {
+    position: relative;
+    font-size: 60px;
+    white-space: nowrap;
+    font-family: 'Ubuntu', sans-serif;
+    color: transparent;
+}
+
+.banner-title::before {
+    content: 'Web Technologies';
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #C06C84;
+    animation: typing 4s linear infinite;
+}
+
+.banner-text {
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+.see-more {
+    outline: 0;
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: #C06C84;
+    color: #fff;
+    border: 2px solid #C06C84;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s linear;
+}
+
+.see-more:hover {
+    background-color: transparent;
+    color: #C06C84;
+}
+
+@keyframes typing {
+    0% {
+        content: 'W|';
+    }
+
+    4% {
+        content: 'We|';
+    }
+
+    8% {
+        content: 'Web|';
+    }
+
+    12% {
+        content: 'Web |';
+    }
+
+    16% {
+        content: 'Web T|';
+    }
+
+    20% {
+        content: 'Web Te|';
+    }
+
+    24% {
+        content: 'Web Tec|';
+    }
+
+    28% {
+        content: 'Web Tech|';
+    }
+
+    32% {
+        content: 'Web Techn|';
+    }
+
+    36% {
+        content: 'Web Techno|';
+    }
+
+    40% {
+        content: 'Web Technol|';
+    }
+
+    44% {
+        content: 'Web Technolo|';
+    }
+
+    48% {
+        content: 'Web Technolog|';
+    }
+
+    52% {
+        content: 'Web Technologi|';
+    }
+
+    56% {
+        content: 'Web Technologie|';
+    }
+
+    60% {
+        content: 'Web Technologies|';
+    }
+
+    64%,
+    83% {
+        content: 'Web Technologies|';
+    }
+
+    84% {
+        content: 'Web Technologie|';
+    }
+
+    85% {
+        content: 'Web Technologi|';
+    }
+
+    86% {
+        content: 'Web Technolog|';
+    }
+
+    87% {
+        content: 'Web Technolo|';
+    }
+
+    88% {
+        content: 'Web Technol|';
+    }
+
+    89% {
+        content: 'Web Techno|';
+    }
+
+    90% {
+        content: 'Web Techn|';
+    }
+
+    91% {
+        content: 'Web Tech|';
+    }
+
+    92% {
+        content: 'Web Tec|';
+    }
+
+    93% {
+        content: 'Web Te|';
+    }
+
+    94% {
+        content: 'Web T|';
+    }
+
+    95% {
+        content: 'Web |';
+    }
+
+    96% {
+        content: 'Web|';
+    }
+
+    97% {
+        content: 'We|';
+    }
+
+    98% {
+        content: 'W|';
+    }
+
+    99% {
+        content: '|';
+    }
+
+    100% {
+        content: '|';
+    }
 }
