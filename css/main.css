@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Slabo 27px', serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+.comtainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+}
+
+.banner-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.banner-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
